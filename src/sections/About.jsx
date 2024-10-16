@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import suib from "../assets/suib-1.PNG";
+import suib from "../assets/suib-1.webp";
 
 function About() {
   return (

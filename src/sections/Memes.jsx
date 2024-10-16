@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import suib1 from "../assets/suib-1.PNG";
-import suib2 from "../assets/suib-2.PNG";
-import suib3 from "../assets/suib-3.PNG";
+import suib1 from "../assets/suib-1.webp";
+import suib2 from "../assets/suib-2.webp";
+import suib3 from "../assets/suib-3.webp";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
 

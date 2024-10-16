@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import suib2 from "../assets/suib-2.PNG";
+import suib2 from "../assets/suib-2.webp";
 
 const Tokenomics = () => {
   const imageVariants = {
