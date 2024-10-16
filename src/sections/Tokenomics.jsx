@@ -47,14 +47,14 @@ const Tokenomics = () => {
           </motion.h2>
           <div className="flex flex-col gap-4 w-full">
             {[
-              { label: "Token Name", value: "$SUIB" },
+              { label: "Token Name", value: "$SUIBA" },
               { label: "Total Supply", value: "1,000,000,000" },
               { label: "Tax", value: "0%" },
               { label: "CA", value: "0x00000000000000000000" },
             ].map((item, index) => (
               <motion.div
                 key={index}
-                className="py-7 px-4 flex justify-start items-center bg-white rounded-md text-black text-2xl lg:text-4xl"
+                className="py-7 px-4 flex justify-start font-bold items-center bg-white rounded-md text-black text-2xl lg:text-4xl"
                 variants={textVariants}
                 initial="hidden"
                 whileInView="visible"

@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
 import logo from "../assets/suib-logo.PNG";
+import InfiniteScroll from "./InfiniteScroll";
 
 const HeroSection = () => {
   // Variants for animations
@@ -18,25 +19,27 @@ const HeroSection = () => {
     <main className="relative">
       <div className="max-w-[65rem] mx-auto">
         <div className="flex flex-col justify-center items-center relative">
-          <div className="relative">
-            <motion.img
-              src={logo}
-              alt="suib"
-              className="mx-auto"
-              height={400}
-              width={600}
-              initial="hidden"
-              animate="visible"
-              variants={imageVariants}
-            />
-            <h1 className="absolute left-0 right-0 mx-auto md:-bottom-5 -bottom-14 arc uppercase font-bold text-[5rem] text-center text-white">
-              $SUIB
-            </h1>
-          </div>
-          <FaXTwitter className="text-7xl absolute left-[20%] bottom-10 bg-white p-3 flex justify-center items-center rounded-full" />
-          <FaTelegramPlane className="text-7xl absolute right-[20%] bottom-10 bg-white p-3 flex justify-center items-center rounded-full" />
+          <motion.img
+            src={logo}
+            alt="suib"
+            className="mx-auto"
+            height={400}
+            width={600}
+            initial="hidden"
+            animate="visible"
+            variants={imageVariants}
+          />
+
+          <h1 className="absolute left-0 right-0 mx-auto md:-bottom-4 -bottom-10 arc uppercase font-bold text-[5rem] text-center text-white">
+            $SUIBA
+          </h1>
+        </div>
+        <div className="flex gap-4 items-center justify-center mt-10">
+          <FaXTwitter className="text-7xl  bg-white p-3 flex justify-center items-center rounded-full" />
+          <FaTelegramPlane className="text-7xl  bg-white p-3 flex justify-center items-center rounded-full" />
         </div>
       </div>
+      <InfiniteScroll />
     </main>
   );
 };
