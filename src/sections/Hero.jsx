@@ -14,33 +14,6 @@ const HeroSection = () => {
     },
   };
 
-  const buttonVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: { duration: 0.5, ease: "easeOut", delay: 1 },
-    },
-  };
-
-  const socialIconVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: { duration: 0.5, ease: "easeOut", delay: 1.5 },
-    },
-  };
-
-  const contractBoxVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.5, ease: "easeOut", delay: 2 },
-    },
-  };
-
   return (
     <main className="relative">
       <div className="max-w-[65rem] mx-auto">
